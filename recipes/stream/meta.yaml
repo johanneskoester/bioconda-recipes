@@ -1,0 +1,68 @@
+package:
+   name: stream
+   version: 0.1.0
+
+source:
+ fn: STREAM_conda.zip
+ url: https://github.com/pinellolab/STREAM/archive/4f67e3058fb00c803951f3b7cb80090509389446.zip
+ sha256: 726c1ce1548702d192217c6393e06d573c8f0858dcdb77b16fc3ffef20fdc31b
+
+build:
+ number: 0
+ skip: True # [not py27]
+
+about:
+   home: ‘https://github.com/pinellolab/stream’
+   license: Affero
+   summary: Single-cell Trajectories Reconstruction, Exploration And Mapping of single-cell data
+
+requirements:
+   build:
+       - python
+       - setuptools
+       - gfortran_linux-64 # [linux]
+       - gfortran_osx-64 # [osx]
+       - r-base
+       - r-xml
+       - r-vgam
+       - r-igraph
+       - r-kernsmooth
+       - rpy2
+       - igraph
+       - python-igraph
+       - libgcc
+       - gcc_linux-64 # [linux]
+       - gxx_linux-64 # [linux]
+       - clang_osx-64 # [osx]
+       - clangxx_osx-64 # [osx]
+       - unzip
+       - zip
+   run:
+       - gfortran_linux-64 # [linux]
+       - gfortran_osx-64 # [osx]
+       - gcc_linux-64 # [linux]
+       - gxx_linux-64 # [linux]
+       - clang_osx-64 # [osx]
+       - clangxx_osx-64 # [osx]
+       - libgcc
+       - r-base
+       - r-xml
+       - r-vgam
+       - r-igraph
+       - r-kernsmooth
+       - rpy2
+       - igraph
+       - python-igraph
+       - numpy
+       - scipy
+       - scikit-learn
+       - matplotlib
+       - seaborn
+       - statsmodels
+       - python
+       - zip
+       - unzip
+
+test:
+   commands:
+       - STREAM -h
