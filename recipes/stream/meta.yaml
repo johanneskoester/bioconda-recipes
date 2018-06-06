@@ -37,6 +37,8 @@ requirements:
        - clangxx_osx-64 # [osx]
        - unzip
        - zip
+       - wget
+       - perl
    run:
        - gfortran_linux-64 # [linux]
        - gfortran_osx-64 # [osx]
