@@ -22,6 +22,11 @@ requirements:
        - setuptools
        - gfortran_linux-64 # [linux]
        - gfortran_osx-64 # [osx]
+       - gcc_linux-64 # [linux]
+       - gxx_linux-64 # [linux]
+       - clang_osx-64 # [osx]
+       - clangxx_osx-64 # [osx]
+       - libgcc
        - r-base
        - r-xml
        - r-vgam
@@ -30,14 +35,10 @@ requirements:
        - r-devtools
        - r-rcpp
        - r-rcpparmadillo
+       - r-essentials
        - rpy2
        - igraph
        - python-igraph
-       - libgcc
-       - gcc_linux-64 # [linux]
-       - gxx_linux-64 # [linux]
-       - clang_osx-64 # [osx]
-       - clangxx_osx-64 # [osx]
        - unzip
        - zip
        - wget
@@ -58,6 +59,7 @@ requirements:
        - r-devtools
        - r-rcpp
        - r-rcpparmadillo
+       - r-essentials
        - rpy2
        - igraph
        - python-igraph

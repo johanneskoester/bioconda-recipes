@@ -1,7 +1,7 @@
 #!/bin/bash
 # Rscript -e 'install.packages("devtools",repos="https://cran.rstudio.com")'
-conda install -c r r-rcpp
-conda install -c r r-rcpparmadillo
+# conda install -c r r-rcpp
+# conda install -c r r-rcpparmadillo
 Rscript -e 'options(unzip="internal");devtools::install_github("Albluca/distutils")'
 Rscript -e 'options(unzip="internal");devtools::install_github("Albluca/ElPiGraph.R", ref = "Development")'
 Rscript -e 'install.packages("igraph",repos="https://cran.rstudio.com")' #not needed
