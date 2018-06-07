@@ -28,6 +28,8 @@ requirements:
        - r-igraph
        - r-kernsmooth
        - r-devtools
+       - r-rcpp
+       - r-rcpparmadillo
        - rpy2
        - igraph
        - python-igraph
@@ -54,6 +56,8 @@ requirements:
        - r-igraph
        - r-kernsmooth
        - r-devtools
+       - r-rcpp
+       - r-rcpparmadillo
        - rpy2
        - igraph
        - python-igraph
