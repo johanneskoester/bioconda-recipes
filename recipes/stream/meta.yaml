@@ -27,6 +27,7 @@ requirements:
        - r-vgam
        - r-igraph
        - r-kernsmooth
+       - r-devtools
        - rpy2
        - igraph
        - python-igraph
@@ -52,6 +53,7 @@ requirements:
        - r-vgam
        - r-igraph
        - r-kernsmooth
+       - r-devtools
        - rpy2
        - igraph
        - python-igraph
