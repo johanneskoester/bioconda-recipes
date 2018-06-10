@@ -9,7 +9,7 @@ source:
 
 build:
  number: 0
- skip: True # [not py27]
+ skip: true # [not py27]
 
 about:
    home: ‘https://github.com/pinellolab/stream’
@@ -36,6 +36,8 @@ requirements:
        - r-rcpp
        - r-rcpparmadillo
        - r-essentials
+       - bioconductor-bsgenome.hsapiens.ucsc.hg19
+       - bioconductor-tfbstools
        - rpy2
        - igraph
        - python-igraph
@@ -43,13 +45,15 @@ requirements:
        - zip
        - wget
        - perl
+       - networkx <2.0,>=1.0
+       - shapely
+       - dash >=0.21
+       - dash-renderer >=0.11
+       - dash-html-components >=0.9
+       - dash-core-components >=0.21
+       - plotly
+       - gunicorn
    run:
-       - gfortran_linux-64 # [linux]
-       - gfortran_osx-64 # [osx]
-       - gcc_linux-64 # [linux]
-       - gxx_linux-64 # [linux]
-       - clang_osx-64 # [osx]
-       - clangxx_osx-64 # [osx]
        - libgcc
        - r-base
        - r-xml
@@ -60,6 +64,8 @@ requirements:
        - r-rcpp
        - r-rcpparmadillo
        - r-essentials
+       - bioconductor-bsgenome.hsapiens.ucsc.hg19
+       - bioconductor-tfbstools
        - rpy2
        - igraph
        - python-igraph
@@ -72,6 +78,14 @@ requirements:
        - python
        - zip
        - unzip
+       - networkx <2.0,>=1.0
+       - shapely
+       - dash >=0.21
+       - dash-renderer >=0.11
+       - dash-html-components >=0.9
+       - dash-core-components >=0.21
+       - plotly
+       - gunicorn
 
 test:
    commands:
