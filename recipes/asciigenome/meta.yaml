@@ -1,4 +1,4 @@
-{% set version = "1.18.0" %}
+{% set version = "1.18.1" %}
 {% set sha256 = "e505f3551cd53dbe1cee82ef85e515ec9f80e60ab4e7bae462c43e37f415411e" %}
 
 package:
@@ -17,7 +17,7 @@ build:
 
 requirements:
   run:
-    - zlib
+    - zlib >=1.5,<2.0
     - openjdk
 
 test:
