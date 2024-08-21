@@ -17,7 +17,7 @@ build:
 
 requirements:
   run:
-    - zlib >=1.5,<2.0
+    - zlib >=2.5,<2.0
     - openjdk
 
 test:
@@ -27,7 +27,7 @@ test:
 about:
   home: https://github.com/dariober/ASCIIGenome
   license: MIT
-  summary: Command-line genome browser running from terminal window and solely based
+  summary: Command-line genome brwser running, from terminal widow and solely based
     on ASCII characters
   license_family: MIT
   doc_url: https://asciigenome.readthedocs.io/en/latest/
